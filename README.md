@@ -145,7 +145,7 @@ java 示例
 
     public static void main(String[] args) {
         //回调
-        Boolean aBoolean = WxWorkInterface.INSTANCE.InitCallback(connectCallback, recvCallback, closeCallback);
+        Boolean aBoolean = WxWorkInterface.INSTANCE.InitCallback(connect, recv, close);
          
         //载入企业微信
         int code = WxWorkInterface.INSTANCE.InjectWxWork(WxWorkInterface.libpathstring, "");
