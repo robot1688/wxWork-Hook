@@ -60,7 +60,7 @@ java 示例
      * @param clientId
      */
     public static void getInnerUsers(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
 
     /**
@@ -69,7 +69,7 @@ java 示例
      * @param clientId
      */
     public static void getExternalUsers(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
 
     /**
@@ -78,7 +78,7 @@ java 示例
      * @param clientId
      */
     public static void getRooms(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
 
     /**
@@ -86,7 +86,7 @@ java 示例
      * @param clientId 
      */
     public static void getChatRoomMembers(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
     
     /**
@@ -95,7 +95,7 @@ java 示例
      * @param json  
      */
     public static void sendText(int clientId, String json) { 
-        Boolean aa = WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        Boolean aa = WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
 
     /**
@@ -104,7 +104,7 @@ java 示例
      * @param json  
      */
     public static void sendImage(int clientId, String json) { 
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     } 
 
     /**
@@ -113,7 +113,7 @@ java 示例
      * @param json  
      */
     public static void sendFile(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
 
     /**
@@ -122,7 +122,7 @@ java 示例
      * @param json  
      */
     public static void sendCard(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }
 
     /**
@@ -131,7 +131,7 @@ java 示例
      * @param json  
      */
     public static void addFriend(int clientId, String json) {
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     } 
 
     /**
@@ -139,7 +139,7 @@ java 示例
      * @param clientId 
      */
     public static void editRoomMember(int clientId, String json) {       
-        WxWorkInterface.INSTANCE.SendWxWorkData(clientId, json);
+        WxWorkInterface.INSTANCE.SendData(clientId, json);
     }  
  
 
@@ -149,6 +149,8 @@ java 示例
          
         //载入企业微信
         int code = WxWorkInterface.INSTANCE.InjectWxWork(WxWorkInterface.libpathstring, "");
+        
+        WxWorkInterface.INSTANCE.sendText(clientId,json);
     } 
     
 
