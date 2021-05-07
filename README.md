@@ -23,9 +23,9 @@ java 示例
     public final static int 发送链接消息 = 8033;
     public final static int 发送个人名片 = 8034;
     public final static int 发送视频消息 = 8067;
-    public final static int 群内AT人 = 8069;
     public final static int 发送GIF图片消息 = 8070;
-    public final static int 获取群组成员列表 = 8040;
+    public final static int 群内AT人 = 8069;
+    
     public final static int 接收文本消息 = 8041;
     public final static int 接收图片消息 = 8042;
     public final static int 接收视频消息 = 8043;
@@ -37,12 +37,15 @@ java 示例
     public final static int 接收红包消息 = 8049;
     public final static int 接收个人名片消息 = 8050;
     public final static int 接收其他未解析消息 = 8051;
+    
     public final static int 手机号查询用户信息 = 8052;
     public final static int 修改群名称 = 8059;
-    public final static int 批量移出群成员 = 8061;
     public final static int 批量邀请好友进群 = 8060;
+    public final static int 批量移出群成员 = 8061
+    
     public final static int 获取外部联系人 = 8037;
     public final static int 获取群组列表 = 8038;
+    public final static int 获取群组成员列表 = 8040;
     public final static int 获取当前登录帐号的信息 = 8035;
     public final static int 获取内部联系人列表 = 8036;
     public final static int 被动添加好友 = 8063;
