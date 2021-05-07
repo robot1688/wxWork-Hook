@@ -149,5 +149,5 @@ java 示例
     } 
     
 
-QQ：272655268
-verify：wxWork
+* QQ：272655268
+* verify：wxWork
